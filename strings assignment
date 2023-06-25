@@ -1,0 +1,65 @@
+#  1. Calculate the length of the string.
+my_string1 = "ABCDFGH"
+print("Calculate the length of the string.")
+print(len(my_string1))
+#  2. Create a string made of the first, middle and last character.Write a program to create a new string made of an input string’s first, middle, and last character.
+my_string2 = "James"
+print("string made of the first, middle and last character.")
+print(my_string2[::2])
+#  3. Create a string made of the middle three characters.Write a program to create a new string made of the middle three characters of an input string.
+my_string3 = "JhonDipPeta"
+print("string made of the middle three characters.")
+print(my_string3[4:7])
+#  4. Given two strings, s1 and s2. Write a program to create a new string s3 by appending s2 in the middle of s1.
+my_string_1 = "Ault"
+my_string_2 = "Kelly"
+print(my_string_1[0] + my_string_1[1] + my_string_2 + my_string_1[2] + my_string_1[3])
+#  5. Create a new string made of the first, middle, and last characters of each input string.Given two strings, s1 and s2,
+#  write a program to return a new string made of s1 and s2’s first, middle, and last characters.
+my_string_3 = "America"
+my_string_4 = "Japan"
+print(my_string_3[0] + my_string_4[0] + my_string_3[3] + my_string_4[2] + my_string_3[6] + my_string_4[4])
+#  6. Arrange string characters such that lowercase letters should come first.
+#  Given string contains a combination of the lower and upper case letters.
+#  Write a program to arrange the characters of a string so that all lowercase letters should come first.
+my_string_5 = "IamLearningPython"
+upper = []
+lower = []
+for i in my_string_5:
+    if i.islower():
+        lower.append(i)
+    else:
+        upper.append(i)
+combined = lower + upper
+result = "".join(combined)
+print(result)
+#  7. Count all letters, digits, and special symbols from a given string
+letters = 0
+digits = 0
+special_symbl = 0
+my_string_5 = "I@#am26at^&i5ve"
+for i in my_string_5:
+    if i.isalpha():
+        letters = letters + 1
+    elif i.isdigit():
+        digits = digits + 1
+    else:
+        special_symbl = special_symbl + 1
+print("count of letters ", + letters)
+print("count of digits ", + digits)
+print("count of special_symbl ", + special_symbl)
+#  8. Find all occurrences of a substring in a given string by ignoring the case.
+#  Write a program to find all occurrences of “USA” in a given string ignoring the case.
+my_string_6 = "Welcome to USA. usa awesome, isn't it?"
+my_substring_1 = 'USA'
+#   9.Reverse a given string
+my_string_7 = "IamLearningPython"
+print(my_string_7[::-1])
+#  10. Find the last position of a given substring.
+#  Write a program to find the last position of a substring “Emma” in a given string.
+my_string_8 = "Emma is a data scientist who knows Python. Emma works at google."
+my_substring = "Emma"
+new_sub_string = my_string_8.rfind(my_substring)
+print("last position of a given substring Emma is", + new_sub_string)
+
+
