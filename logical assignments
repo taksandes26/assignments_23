@@ -1,0 +1,26 @@
+# # 1 Take two number input from user and multiply them without using * operator
+# num_1 = int(input("enter first number"))
+# num_2 = int(input("enter second number"))
+# result = 0
+# for g in range(0, num_2):
+#     result = result + num_1
+# print(result)   
+
+# # 2. Write a program to sum up only ones (1 digit) from following list without using "if"
+# my_Given_list = [1, 0, 0, 1, 1, 1, 0, 1, 0, 1]
+# temp = [x for x in my_Given_list if x == 1 ]
+# print(sum(temp))
+
+# 3. Python program to remove spaces from string without any inbuilt function
+
+my_string = "Learning Python is a fun"    
+def remove_space(my_string):
+    result = ""
+    for x in my_string:
+        if x != ' ':
+            result += x
+    return result
+result = remove_space(my_string)
+print(result)
+
+
