@@ -1,0 +1,55 @@
+#  1. Write a Python program to convert them into a dictionary in a way
+#  that item from list1 is the key and item from list2 is the value
+my_keys = ['Ten', 'Twenty', 'Thirty']
+my_values = [10, 20, 30]
+my_dict = {key: value for key, value in zip(my_keys, my_values)}
+print(my_dict)
+#  2. Merge two Python dictionaries into one
+my_dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+my_dict2 = {'Thirty': 30, 'Forty': 40, 'Fifty': 50}
+my_dict1.update(my_dict2)
+print(my_dict1)
+#  3. Print the value of key ‘history’ from the below dict
+my_sample_dict = {
+       "class": {
+             "student": {
+                 "name": "Mike",
+                 "marks": {
+                     "physics": 70,
+                     "history": 80
+
+                 }
+             }
+         }
+     }
+final_dict = my_sample_dict["class"]["student"]["marks"]["history"]
+print(final_dict)
+
+#  4. Write a Python program to create a new dictionary by extracting the mentioned keys from the below dictionary.
+# Given dictionary:
+my_keys = ["name", "salary"]
+my_sample_dict1 = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+new_dict1 = {key: my_sample_dict1[key] for key in my_keys}
+print(new_dict1)
+
+#  5. Delete a list of keys from a dictionary
+my_sample_dict2 = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+my_sample_dict2.pop("name")
+my_sample_dict2.pop("salary")
+print(my_sample_dict2)
+
+#  6. Write a Python program to check if value 200 exists in the following dictionary.
+my_sample_dict3 = {'a': 100, 'b': 200, 'c': 300}
+if 200 in my_sample_dict3.values():
+    print("value exists")
+else:
+    print("value does not exists")
+
+#  7. Change value of a key in a nested dictionary
+#     Write a Python program to change Brad’s salary to 8500 in the following dictionary.
+my_sample_dict4 = {'emp1': {'name': 'Jhon', 'salary': 7500}, 'emp2': {'name': 'Emma', 'salary': 8000}, 'emp3': {'name': 'Brad', 'salary': 500}}
+my_sample_dict4['emp3']['salary'] = 8500
+print(my_sample_dict4)
+
+
+
